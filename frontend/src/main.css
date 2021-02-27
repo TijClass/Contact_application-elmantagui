@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --grey-100: #f7f7f7;
+  --grey-200: #eeeeee;
+  --grey-500: #929aab;
+  --grey-700: #707070;
+  --grey-900: #393e46;
+  --grey-700-op-3: #7070704d;
+}
+html {
+  font-size: 8px;
+}
+body {
+  background-color: var(--grey-200);
+  font-family: "Roboto", sans-serif;
+}
+.new-class {
+  @apply bg-green-100 rounded p-2;
+  width: 10rem;
+}
+.nav-bar {
+  width: 100vw;
+  height: 60px;
+  background-color: var(--grey-900);
+}
+.nav-bar-container {
+  width: 98%;
+  height: 100%;
+  margin: 0 auto;
+  @apply flex items-center;
+}
+
+.logo-container {
+  width: max-content;
+  height: max-content;
+}
+
+.brand-name-container {
+  margin: 0 auto;
+}
+.brand-name {
+  color: var(--grey-100);
+  font-size: 4rem;
+  font-weight: 400;
+}
+.login-container {
+  width: 60vw;
+  height: 60vh;
+  margin: 0 auto;
+  margin-top: 10vh;
+  border-radius: 20px;
+  border: 1px solid var(--grey-700-op-3);
+  background-color: var(--grey-100);
+  @apply flex flex-row;
+}
+
+.welcome-block,
+.login-form-block {
+  width: 50%;
+  height: 100%;
+}
+
+.welcome-block {
+  padding: 2rem;
+}
+
+.login-form-block {
+  background-color: var(--grey-500);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid var(--grey-700-op-3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.login-form-block form {
+  height: 60%;
+  margin: auto 0;
+}
+.login-form-title {
+  color: var(--grey-100);
+}
+.form-items {
+  width: 100%;
+  margin: 2rem auto;
+}
+.form-items label {
+  margin-left: 0.5rem;
+  display: block;
+  color: var(--grey-100);
+  /* @apply; */
+}
+.checkbox-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.checkbox-item input {
+  border: 0;
+}
+.checkbox-item label {
+  display: inline !important;
+}
+.form-items input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  color: var(--grey-900);
+  background-color: var(--grey-100);
+  border-radius: 5px;
+  border: 1px solid var(--grey-700-op-3);
+  margin: 0 auto;
+  padding: 1rem;
+  outline: none;
+}
+.form-items-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.login-btn {
+  height: 3rem;
+  width: 10rem;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  color: var(--grey-900);
+  background-color: var(--grey-100);
+  outline: none;
+}
+
+.welcome-block-title {
+  color: var(--grey-900);
+  font-weight: 400;
+}
+.welcome-block-par {
+  margin-top: 2rem;
+  color: var(--grey-500);
+}
+.welcome-block-btn {
+  margin-top: 2rem;
+  height: 3rem;
+  width: 10rem;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  color: var(--grey-100);
+  background-color: var(--grey-900);
+  outline: none;
+}
