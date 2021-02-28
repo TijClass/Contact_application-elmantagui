@@ -29,7 +29,7 @@
         <h1 class="contact-title text-6xl text-center mt-4	">Contact List</h1>
         <div class="control-container">
             <input class="search-input" type="text" placeholder="Search">
-            <button class="addcontact-btn">Add Contact</button>
+            <button id="addcontact-btn" class="addcontact-btn">Add Contact</button>
         </div>
         <div class="table-container mt-6 mx-4">
             <table class="contact-table">
@@ -62,6 +62,56 @@
             </table>
         </div>
     </main>
+    <div id="modal-container" class="modal-container">
+        <div class="modal">
+            <h1 class="contact-title text-6xl text-center mt-4">Add Contact</h1>
+            <div class="modal-form-container">
+                <div class="form-items">
+                    <label class="text-grey-900" for="">First Name</label>
+                    <input class="text-lg" type="text" placeholder="Mike">
+                </div>
+                <div class="form-items">
+                    <label class="text-grey-900" for="">Last Name</label>
+                    <input class="text-lg" type="text" placeholder="brody">
+                </div>
+                <div class="form-items">
+                    <label class="text-grey-900" for="">Email</label>
+                    <input class="text-lg" type="text" placeholder="MikeBrody@email.com">
+                </div>
+                <div class="form-items">
+                    <label class="text-grey-900" for="">Adress</label>
+                    <input class="text-lg" type="text" placeholder="21st,LA">
+                </div>
+                <div class="form-items">
+                    <label class="text-grey-900" for="">Number Phone</label>
+                    <input class="text-lg" type="text" placeholder="+ (343) 231 545">
+                </div>
+                <div class="groupe-items">
+                    <div class="groupe-item">
+                        <input type="radio" checked name="groupe">
+                        <label for=""> Familly</label>
+                    </div>
+                    <div class="groupe-item">
+                        <input type="radio" name="groupe">
+                        <label for=""> Friend</label>
+                    </div>
+                    <div class="groupe-item">
+                        <input type="radio" name="groupe">
+                        <label for=""> Business</label>
+                    </div>
+                </div>
+                <div class="form-items">
+                    <label class="text-grey-900" for="">Notes</label>
+                    <textarea class="text-lg" rows="5" type="text"
+                        placeholder="Write something that make you remember."></textarea>
+                </div>
+                <div class="form-items-btn">
+                    <button class="addcontact-btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=" js/app.js"></script>
 </body>
 
 </html>
