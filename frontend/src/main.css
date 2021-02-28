@@ -6,9 +6,12 @@
   --grey-100: #f7f7f7;
   --grey-200: #eeeeee;
   --grey-500: #929aab;
+  --grey-600: #868c9a;
   --grey-700: #707070;
   --grey-900: #393e46;
   --grey-700-op-3: #7070704d;
+  --red-600: #bd2000;
+  --green-600: #5eaaa8;
 }
 html {
   font-size: 8px;
@@ -88,6 +91,7 @@ body {
   margin: 2rem auto;
 }
 .form-items label {
+  font-size: 1.5rem;
   margin-left: 0.5rem;
   display: block;
   color: var(--grey-100);
@@ -102,13 +106,14 @@ body {
   border: 0;
 }
 .checkbox-item label {
+  font-size: 1.5rem;
   display: inline !important;
 }
 .form-items input[type="text"],
 input[type="password"] {
   width: 100%;
   height: 3rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--grey-900);
   background-color: var(--grey-100);
   border-radius: 5px;
@@ -142,10 +147,98 @@ input[type="password"] {
 .welcome-block-btn {
   margin-top: 2rem;
   height: 3rem;
-  width: 10rem;
-  font-size: 1.25rem;
+  width: 15rem;
+  font-size: 1.5rem;
   border-radius: 5px;
   color: var(--grey-100);
   background-color: var(--grey-900);
   outline: none;
+}
+.logout-btn {
+  height: 4rem;
+  width: 10rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  color: var(--grey-200);
+  background-color: var(--red-600);
+  outline: 0;
+}
+.contact-container {
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  margin-top: 5vh;
+  background-color: var(--grey-100);
+  border: 1px solid var(--grey-700-op-3);
+  border-radius: 20px;
+}
+.contact-title {
+  color: var(--grey-900);
+  font-weight: 400;
+}
+.control-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  outline: 0;
+}
+
+.search-input {
+  width: 30%;
+  height: 4rem;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: var(--grey-100);
+  border: 1px solid var(--grey-700-op-3);
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+.addcontact-btn {
+  height: 4rem;
+  width: 15rem;
+  font-size: 1.75rem;
+  border-radius: 5px;
+  color: var(--grey-200);
+  font-weight: 600;
+  background-color: var(--green-600);
+  border: 1px solid var(--grey-700-op-3);
+  outline: none;
+}
+
+.contact-table {
+  width: 100%;
+  background-color: var(--grey-500);
+  border-collapse: collapse;
+  border-radius: 2rem;
+  overflow: hidden;
+  color: var(--grey-100);
+}
+.contact-table thead tr {
+  height: 3rem;
+  background-color: var(--grey-600);
+  font-size: 1.5rem;
+}
+.contact-table td {
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+.close-icon,
+.edit-action {
+  cursor: pointer;
+}
+.close-icon {
+  display: inline;
+  width: 20px;
+}
+.action-td {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.edit-action {
+  font-size: 1.75rem;
 }
