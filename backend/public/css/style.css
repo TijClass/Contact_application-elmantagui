@@ -31415,7 +31415,7 @@ input[type="password"] {
   font-size: 2rem;
 }
 
-.addcontact-btn {
+.modal-btn,.addcontact-btn {
   height: 4rem;
   width: 15rem;
   font-size: 1.75rem;
@@ -31521,8 +31521,8 @@ input[type="password"] {
 
 .groupe-item input {
   margin-right: 1rem;
-  width: 20px;
-  height: 20px;
+  /* width: 20px;
+  height: 20px; */
 }
 
 .groupe-item label {
